@@ -11,6 +11,8 @@ class MoviesStore extends Store {
     this._storeName = 'Movie'
   }
 
+
+/*
   async find(query) {
     const filter = this._formatInputData(omit(query.filter, ['name']));
     const orderBy = isEmpty(query.sort) ? [{ field: 'created_at', order: 'desc'}] : query.sort;
@@ -38,6 +40,7 @@ class MoviesStore extends Store {
 
     return this._findOne({ filter, sort })
   }
+  */
 }
 
 module.exports = MoviesStore;

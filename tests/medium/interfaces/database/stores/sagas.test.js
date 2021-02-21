@@ -22,7 +22,7 @@ async function updateSaga(data, database) {
   return saga.toJSON();
 }
 
-describe('Interfaces - Database', () => {
+describe.skip('Interfaces - Database', () => {
   describe('Stores', () => {
     describe('Sagas Store', () => {
       let database;

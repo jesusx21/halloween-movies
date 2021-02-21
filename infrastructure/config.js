@@ -7,7 +7,7 @@ const knexfile = require(`${RootPath}/knexfile`);
 function buildConfig() {
   const env = process.env.NODE_ENV;
   const path = `${ROOT_PATH}/infrastructure/.env/${env}.env`
-  const { parsed: envObject } =  dotenv.config({ path });
+  const { parsed: envObject = {} } =  dotenv.config({ path });
 
   const databaseData = knexfile[env];
 

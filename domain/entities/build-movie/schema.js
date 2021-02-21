@@ -6,20 +6,13 @@ const schema = Joi.object({
     .optional(),
   name: Joi.string(),
   plot: Joi.string(),
-  imdbId: Joi.string()
-    .guid({ version: ['uuidv4'] })
-    .optional()
-    .allow(null),
-  sagaId: Joi.string()
-    .guid({ version: ['uuidv4'] })
+  // imdbId: Joi.string()
+  //   .guid({ version: ['uuidv4'] })
+  //   .optional()
+  //   .allow(null),
+  watchOn: Joi.string()
     .optional(),
-  watched: Joi.boolean()
-    .optional(),
-  numberOnSaga: Joi.number()
-    .integer()
-    .positive()
-    .optional(),
-  watchedAt: Joi.date()
+  releasedAt: Joi.date()
     .optional()
     .allow(null),
   createdAt: Joi.date()

@@ -4,7 +4,7 @@ module.exports = {
   test: {
     client: 'postgresql',
     connection: {
-      database: 'halloween_movies_test',
+      database: 'movies_freak_test',
       user:     'postgres'
     },
     pool: {
@@ -19,7 +19,7 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
-      database: 'halloween_movies_dev',
+      database: 'movies_freak_dev',
       user:     'postgres'
     },
     pool: {
@@ -34,7 +34,7 @@ module.exports = {
   staging: {
     client: 'postgresql',
     connection: {
-      database: 'halloween_movies_staging',
+      database: 'movies_freak_staging',
       user:     'postgres'
     },
     pool: {
@@ -49,7 +49,7 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      database: 'halloween_movies',
+      database: 'movies_freak',
       user:     'username',
       password: 'password'
     },

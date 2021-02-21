@@ -21,7 +21,7 @@ async function updateIMDBData(data, database) {
   return imdb.toJSON();
 }
 
-describe('Interfaces - Database', () => {
+describe.skip('Interfaces - Database', () => {
   describe('Stores', () => {
     describe('IMDB Store', () => {
       let database;
